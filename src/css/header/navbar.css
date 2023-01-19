@@ -1,0 +1,92 @@
+.navbar {
+  /* background-color: red; */
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  height: 65px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar .logo svg path {
+  fill: var(--main-purple);
+}
+
+.sandwichIcon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* background-color: blue; */
+  width: fit-content;
+  padding: 18px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sandwichIcon .sandwichRow {
+  width: 22px;
+  height: 3px;
+  background-color: var(--main-black);
+}
+
+#checkboxMenu{
+    position: absolute;
+    opacity: 0;
+}
+
+.navItems {
+  left: 0;
+  position: absolute;
+  width: 100%;
+  top: -900px;
+  height: calc(100vh - 65px);
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  transition: top 0.5s;
+  /* background-color: aqua; */
+}
+
+#checkboxMenu:checked + .navItems{
+    top: 65px;
+}
+
+.navItems li {
+  padding: 25px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--grey-1);
+}
+
+/* --------------------DESKTOP------------------------ */
+
+@media (min-width: 1150px) {
+  .navbar {
+    justify-content: flex-start;
+    padding: 0 45px;
+  }
+
+  .sandwichIcon {
+    display: none;
+  }
+
+  .navItems {
+    position: static;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+  }
+
+  .navItems li {
+    font-size: 1.20rem;
+    border: none;
+  }
+
+  .loginButton {
+    position: absolute;
+    right: 35px;
+    color: var(--main-purple);
+  }
+}
