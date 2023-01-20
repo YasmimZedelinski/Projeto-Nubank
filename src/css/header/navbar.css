@@ -7,6 +7,7 @@
   padding: 0 25px;
   height: 65px;
   width: 100%;
+  z-index: 999;
   box-sizing: border-box;
 }
 
@@ -60,6 +61,17 @@
   border-bottom: 1px solid var(--grey-1);
 }
 
+.loginButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.loginButton .loginIcon {
+  font-size: 1.25rem;
+  transform: translateY(-8px);
+}
+
 /* --------------------DESKTOP------------------------ */
 
 @media (min-width: 1150px) {
@@ -88,5 +100,9 @@
     position: absolute;
     right: 35px;
     color: var(--main-purple);
+  }
+
+  .loginButton .loginIcon {
+    transform: translateY(0);
   }
 }

@@ -1,3 +1,4 @@
 @import '/src/css/normalize.css';
 @import '/src/css/utils/colors.css';
-@import '/src/css/header/navbar.css'
+@import '/src/css/header/navbar.css';
+@import '/src/css/hero/index.css';

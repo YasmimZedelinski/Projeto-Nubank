@@ -1,0 +1,27 @@
+#sectionLogin {
+    height: 966.5px;
+    background-color: red;
+    position: relative;
+}
+
+.mainTitle {
+    position: absolute;
+    text-align: justify;
+    top: 398px;
+    padding: 0 36px 0 19px;
+    font-weight: 600;
+    color: var(--main-white);
+    font-size: 1.875rem;
+}
+
+.firstText {
+    position: absolute;
+    text-align: justify;
+    top: 498px;
+    padding: 0 19px;
+    font-weight: 500;
+    color: var(--main-white);
+    font-size: 1.25rem;
+}
+
+/* --------------------DESKTOP------------------------ */
