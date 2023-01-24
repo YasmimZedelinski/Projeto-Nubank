@@ -1,5 +1,5 @@
 .navbar {
-  /* background-color: red; */
+  background-color: var(--main-white);
   position: fixed;
   display: flex;
   align-items: center;
@@ -7,6 +7,7 @@
   padding: 0 25px;
   height: 65px;
   width: 100%;
+  top: 0;
   z-index: 999;
   box-sizing: border-box;
 }
@@ -47,7 +48,7 @@
   flex-direction: column;
   list-style: none;
   transition: top 0.5s;
-  /* background-color: aqua; */
+  background-color: var(--main-white);
 }
 
 #checkboxMenu:checked + .navItems{
@@ -56,7 +57,7 @@
 
 .navItems li {
   padding: 25px;
-  font-size: 2.5rem;
+  font-size: 3.8rem;
   font-weight: 500;
   border-bottom: 1px solid var(--grey-1);
 }
@@ -78,6 +79,7 @@
   .navbar {
     justify-content: flex-start;
     padding: 0 45px;
+  
   }
 
   .sandwichIcon {
@@ -89,10 +91,11 @@
     flex-direction: row;
     height: auto;
     width: auto;
+    background-color: transparent;
   }
 
   .navItems li {
-    font-size: 1.20rem;
+    font-size: 1rem;
     border: none;
   }
 

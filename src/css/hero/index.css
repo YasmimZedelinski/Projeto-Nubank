@@ -1,27 +1,164 @@
 #sectionLogin {
-    height: 966.5px;
-    background-color: red;
+  height: 1020px;
+  background-color: red;
+  position: relative;
+  display: flex;
+}
+
+.registerWrapper {
+    display: flex;
+    flex-direction: column;
     position: relative;
+    top: 398px;
+    gap: 35px;
+}
+
+.textsLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .mainTitle {
-    position: absolute;
-    text-align: justify;
-    top: 398px;
-    padding: 0 36px 0 19px;
-    font-weight: 600;
-    color: var(--main-white);
-    font-size: 1.875rem;
+  padding: 0 36px 0 19px;
+  font-weight: 600;
+  color: var(--main-white);
+  font-size: 1.875rem;
+  /* background-color: blueviolet; */
 }
 
 .firstText {
-    position: absolute;
-    text-align: justify;
-    top: 498px;
-    padding: 0 19px;
-    font-weight: 500;
-    color: var(--main-white);
-    font-size: 1.25rem;
+  padding: 0 19px;
+  font-weight: 500;
+  color: var(--main-white);
+  font-size: 1.25rem;
+  /* background-color: aqua; */
 }
 
+.registerCard {
+    background-color: var(--main-white);
+    margin: 0 auto;
+    width: 389px;
+    border-radius: 20px;
+    padding: 38px 30px;
+    box-sizing: border-box;
+}
+
+.registerCardTitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+    gap: 30px;
+    position: relative;
+}
+
+.inputForm {
+    border: none;
+    border-bottom:  1px solid var(--grey-2);
+    z-index: 999;
+    background: transparent;
+    outline: none;
+    font-size: 1.25rem;
+    padding-bottom: 10px;
+}
+
+.registerPlaceholder {
+    position: absolute;
+    top: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: top 0.1s;
+    color: var(--grey-3);
+}
+
+.inputForm:focus + .registerPlaceholder, .inputForm:not(:placeholder-shown) + .registerPlaceholder{
+    font-size: 0.7rem;
+    top: -20px;
+}
+
+.registerButton {
+    border-radius: 35px;
+    border: none;
+    padding: 22px 25px;
+    background-color: var(--grey-1);
+    color: var(--grey-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
 /* --------------------DESKTOP------------------------ */
+@media (min-width: 1150px) {
+  #sectionLogin {
+    height: 883px;
+  }
+
+  .textsLogin {
+    top: 300px;
+    padding-left: 50px;
+    max-width: 750px;
+  }
+
+  .mainTitle {
+    font-size: 3rem;
+  }
+
+  .firstText {
+    font-size: 1.5rem;
+  }
+
+  .registerWrapper{
+    flex-direction: row;
+    width: 100%;
+    background-color: blueviolet;
+  }
+
+  .registerCard {
+    max-height: 350px;
+    width: 410px;
+    margin-right: 50px;
+  }
+
+  .registerCardTitle {
+    font-size: 1.5rem;
+  }
+
+  .registerButton {
+    font-size: 1rem;
+  }
+}
+
+/* 
+#sectionLogin {
+    height: 883px;
+  }
+
+  .textsLogin {
+    top: 300px;
+    padding-left: 150px;
+    max-width: 550px;
+  }
+
+  .mainTitle {
+    font-size: 3rem;
+  }
+
+  .firstText {
+    font-size: 1.5rem;
+  }
+
+  .registerWrapper{
+    flex-direction: row;
+    width: 100%;
+    background-color: blueviolet;
+  }
+
+  .registerCard {
+    max-height: 400px;
+    width: 342px;
+  } */
