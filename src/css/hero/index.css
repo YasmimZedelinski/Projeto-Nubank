@@ -1,8 +1,12 @@
 #sectionLogin {
   height: 1020px;
-  background-color: red;
+  /* background-color: red; */
   position: relative;
   display: flex;
+  background-image: url(/src/img/fullBackground1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom;
 }
 
 .registerWrapper {
@@ -11,6 +15,7 @@
     position: relative;
     top: 398px;
     gap: 35px;
+    padding: 0 20px;
 }
 
 .textsLogin {
@@ -20,7 +25,6 @@
 }
 
 .mainTitle {
-  padding: 0 36px 0 19px;
   font-weight: 600;
   color: var(--main-white);
   font-size: 1.875rem;
@@ -28,7 +32,6 @@
 }
 
 .firstText {
-  padding: 0 19px;
   font-weight: 500;
   color: var(--main-white);
   font-size: 1.25rem;
@@ -95,7 +98,9 @@
 /* --------------------DESKTOP------------------------ */
 @media (min-width: 1150px) {
   #sectionLogin {
-    height: 883px;
+    height: 931px;
+    background-position: inherit;
+    background-position-y: -50px;
   }
 
   .textsLogin {
@@ -115,7 +120,7 @@
   .registerWrapper{
     flex-direction: row;
     width: 100%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
   }
 
   .registerCard {
@@ -132,33 +137,3 @@
     font-size: 1rem;
   }
 }
-
-/* 
-#sectionLogin {
-    height: 883px;
-  }
-
-  .textsLogin {
-    top: 300px;
-    padding-left: 150px;
-    max-width: 550px;
-  }
-
-  .mainTitle {
-    font-size: 3rem;
-  }
-
-  .firstText {
-    font-size: 1.5rem;
-  }
-
-  .registerWrapper{
-    flex-direction: row;
-    width: 100%;
-    background-color: blueviolet;
-  }
-
-  .registerCard {
-    max-height: 400px;
-    width: 342px;
-  } */
