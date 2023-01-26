@@ -1,0 +1,57 @@
+.creditSection{
+    height: 830px;
+    /* background-color: aqua; */
+}
+
+.textsbuttonSections{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 60px 28px 25px 15px;
+}
+
+.titleSections {
+    font-weight: 500;
+    color: var(--main-purple);
+    font-size: 1.875rem;
+    /* background-color: wheat; */
+}
+
+.textSections {
+    font-weight: 450;
+    font-size: 1.5rem;
+    /* background-color: blueviolet; */
+}
+
+.buttonSections {
+    margin-top: 40px;
+    border: none;
+    background: transparent;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--main-purple);
+    width: fit-content;
+}
+
+.iconSaibaMais {
+    left: 10px;
+    position: relative;
+    font-size: 0.8rem;
+}
+
+.imgSections {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: -webkit-fill-available;
+    padding: 0 25px 0 15px;
+}
+
+.premiumCredit {
+    background-color: var(--grey-0);
+    height: 750px;
+}
+
+.registerAccount {
+    height: 830px;
+}
